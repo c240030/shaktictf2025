@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Templateception</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Templateception</h1>
+    <p>Submit a template and config:</p>
+    <form method="POST" action="/upload">
+      <label>Filename:</label>
+      <input type="text" name="filename" required><br>
+      <label>Template:</label><br>
+      <textarea name="template" rows="8" cols="60" required>Hello {{=it.name}}!</textarea><br>
+      <label>Config (JSON):</label><br>
+      <textarea name="config" rows="8" cols="60" required>{}</textarea><br>
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+</body>
+</html>
